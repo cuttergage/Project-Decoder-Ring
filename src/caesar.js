@@ -1,4 +1,5 @@
 const caesarModule = (function () {
+
   function caesar(input, shift, encode = true) {
     if (!shift || shift === 0 || shift < -25 || shift > 25) {
       return false;
@@ -21,6 +22,7 @@ const caesarModule = (function () {
     }
     return result;
   }
+  
   return {
     caesar,
   };

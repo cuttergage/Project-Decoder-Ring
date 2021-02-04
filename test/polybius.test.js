@@ -2,6 +2,7 @@ const expect = require("chai").expect;
 const polybiusModule = require("../src/polybius");
 
 describe("polybiusModule", () => {
+  
   it("encoding output should be a string of number pairs", () => {
     expect(polybiusModule("thinkful")).to.eql("4432423352125413");
   });

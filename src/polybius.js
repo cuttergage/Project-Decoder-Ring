@@ -1,4 +1,5 @@
 const polybiusModule = (function () {
+
   const alphabet = {
     a: "11", b: "21", c: "31", d: "41", e: "51",
     f: "12", g: "22", h: "32", i: "42", j: "42",
@@ -6,6 +7,7 @@ const polybiusModule = (function () {
     p: "53", q: "14", r: "24", s: "34", t: "44",
     u: "54", v: "15", w: "25", x: "35", y: "45", z: "55"
   }
+
   function polybius(input, encode = true) {
     let result = "";
     input = input.toLowerCase();
@@ -43,6 +45,7 @@ const polybiusModule = (function () {
     }
     return result;
   }
+  
   return {
     polybius,
   };
